@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">MultiLayoutRecycler</string>
+    <string name="duration_hint">1 Minute</string>
+    <string name="last_update">Last Update</string>
+    <string name="hint_date">10 jan 2020</string>
+    <string name="genre">Genre</string>
+    <string name="artist">Artist</string>
+    <string name="content_title">Content Title</string>
 </resources>

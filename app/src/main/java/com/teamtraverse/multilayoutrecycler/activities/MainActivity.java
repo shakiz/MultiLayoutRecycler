@@ -1,8 +1,10 @@
-package com.teamtraverse.multilayoutrecycler;
+package com.teamtraverse.multilayoutrecycler.activities;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+
+import com.teamtraverse.multilayoutrecycler.R;
 
 public class MainActivity extends AppCompatActivity {
 

@@ -1,0 +1,185 @@
+<androidx.cardview.widget.CardView
+    android:id="@+id/item_card_view"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    card_view:cardCornerRadius="5dp"
+    card_view:cardElevation="10dp"
+    android:clickable="true"
+    android:foreground="?attr/selectableItemBackgroundBorderless"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/BackgroundImage"
+        android:layout_width="match_parent"
+        android:layout_margin="4dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@color/md_white_1000"
+        android:gravity="center"
+        android:tag="Background"
+        android:orientation="horizontal">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="80dp"
+            android:layout_height="60dp"
+            android:layout_margin="5dp"
+            android:background="@color/md_white_1000"
+            android:clickable="true"
+            android:elevation="0dp"
+            android:foreground="?android:attr/selectableItemBackground"
+            card_view:cardCornerRadius="4dp"
+            card_view:cardUseCompatPadding="true">
+
+            <ImageView
+                android:id="@+id/ContentTypeImage"
+                android:src="@drawable/ic_baseline_video"
+                android:layout_width="match_parent"
+                android:tag="Drawable"
+                android:layout_height="match_parent"/>
+
+        </androidx.cardview.widget.CardView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/ContentTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:gravity="center|left"
+                android:layout_marginRight="8dp"
+                android:textColor="#3E3E3E"
+                android:text="Video Title" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center|left"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/ContentDuration"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:textSize="12sp"
+                    android:tag="Duration"
+                    android:layout_gravity="center"
+                    android:gravity="center|left"
+                    android:textColor="@color/md_deep_orange_500"
+                    android:hint="@string/duration_hint"
+                    android:textColorHint="@color/md_deep_orange_500"
+                    android:ellipsize="end"
+                    android:maxLines="2"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:id="@+id/ContentProgress"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:paddingTop="2dp"
+                        android:paddingBottom="2dp"
+                        android:paddingRight="4dp"
+                        android:scrollHorizontally="true"
+                        android:text="0"
+                        android:textColor="@color/md_green_600"
+                        android:textStyle="bold"
+                        android:textSize="14sp" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:paddingTop="2dp"
+                        android:paddingBottom="2dp"
+                        android:paddingRight="8dp"
+                        android:scrollHorizontally="true"
+                        android:text="%"
+                        android:textColor="@color/md_green_600"
+                        android:textStyle="bold"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center|left"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:textSize="12sp"
+                    android:layout_gravity="center"
+                    android:gravity="center|left"
+                    android:textColor="@color/md_grey_800"
+                    android:hint="@string/last_update"
+                    android:textColorHint="@color/md_grey_800"
+                    android:ellipsize="end"
+                    android:maxLines="2"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="8dp"
+                    android:textSize="12sp"
+                    android:layout_gravity="center"
+                    android:gravity="center|left"
+                    android:textColor="@color/md_grey_800"
+                    android:hint=":"
+                    android:textColorHint="@color/md_grey_800"
+                    android:ellipsize="end"
+                    android:maxLines="2"/>
+
+                <TextView
+                    android:id="@+id/LastSeen"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="8dp"
+                    android:textSize="12sp"
+                    android:tag="Date"
+                    android:gravity="center|left"
+                    android:textColor="@color/md_grey_800"
+                    android:hint="@string/hint_date"
+                    android:textColorHint="@color/md_grey_800"
+                    android:ellipsize="end"
+                    android:maxLines="2"/>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
+
+
+
