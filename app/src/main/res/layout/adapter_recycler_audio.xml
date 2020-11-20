@@ -34,7 +34,6 @@
             card_view:cardUseCompatPadding="true">
 
             <ImageView
-                android:id="@+id/ContentTypeImage"
                 android:src="@drawable/ic_baseline_audio"
                 android:layout_width="match_parent"
                 android:tag="Drawable"
